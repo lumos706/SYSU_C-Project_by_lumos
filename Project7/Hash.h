@@ -30,7 +30,7 @@ public:
     //}
 
     int hashFunction(const string& name) {
-        // ¼òµ¥µÄ³ıÁôÓàÊı·¨¹şÏ£º¯Êı
+        // ç®€å•çš„é™¤ç•™ä½™æ•°æ³•å“ˆå¸Œå‡½æ•°
         int total = 0;
         for (char c : name) {
             total += static_cast<int>(c);
@@ -38,17 +38,17 @@ public:
         return (total+size*100) % size;
     }
     //int pseudoRandomFunction(int key, int attempt) {
-    //    // Ê¹ÓÃÎ±Ëæ»úÊıÉú³ÉÆ÷
+    //    // ä½¿ç”¨ä¼ªéšæœºæ•°ç”Ÿæˆå™¨
     //    if (randomidx == 29) randomidx = 0;
     //    return (key + randomlist[randomidx++]) % size;
 
     //}
     int pseudoRandomFunction(int key, int attempt) {
-        // Î±Ëæ»úÌ½²âÔÙÉ¢ÁĞ·¨
+        // ä¼ªéšæœºæ¢æµ‹å†æ•£åˆ—æ³•
         return (key + attempt ) % size;
     }
     //int pseudoRandomFunction(int key, int attempt) {
-    //    // Ê¹ÓÃÎ±Ëæ»úÊıÉú³ÉÆ÷
+    //    // ä½¿ç”¨ä¼ªéšæœºæ•°ç”Ÿæˆå™¨
     //    uniform_int_distribution<int> distribution(1, size - 1);
     //    return (key + distribution(rng)) % size;
     //}
@@ -58,7 +58,7 @@ public:
         int index = hashFunction(name);
 
         while (!table[index].empty()) {
-            // ³åÍ»´¦Àí
+            // å†²çªå¤„ç†
             attempt++;
             index = pseudoRandomFunction(hashFunction(name), attempt);
         }
@@ -73,25 +73,25 @@ public:
 
         while (!table[index].empty()) {
             if (table[index] == name) {
-                numAttempts = attempt + 1;  // ÕÒµ½ÁË
+                numAttempts = attempt + 1;  // æ‰¾åˆ°äº†
                 return static_cast<int>(index);
             }
             else {
-                // ³åÍ»´¦Àí
+                // å†²çªå¤„ç†
                 attempt++;
                 index = pseudoRandomFunction(hashFunction(name), attempt);
             }
         }
 
-        numAttempts = attempt + 1;  // Î´ÕÒµ½
+        numAttempts = attempt + 1;  // æœªæ‰¾åˆ°
         return -1;
     }
 
     void displayTable() {
-        cout << endl << "                   ¹şÏ£±íÄÚÈİ£º" << endl;
+        cout << endl << "                   å“ˆå¸Œè¡¨å†…å®¹ï¼š" << endl;
         int totalAttempts = 0;
 
-        cout << left << setw(15) << "Ë÷Òı" << setw(15) << "ĞÕÃû" << setw(15) << "¼üÖµ" << "²éÕÒ´ÎÊı" << endl;
+        cout << left << setw(15) << "ç´¢å¼•" << setw(15) << "å§“å" << setw(15) << "é”®å€¼" << "æŸ¥æ‰¾æ¬¡æ•°" << endl;
 
         for (int i = 0; i < size; ++i) {
             int total = 0;
@@ -104,7 +104,7 @@ public:
         }
 
         double averageAttempts = static_cast<double>(totalAttempts) / 30;
-        cout << "Æ½¾ù²éÕÒ´ÎÊı£º" << averageAttempts << endl << endl;
+        cout << "å¹³å‡æŸ¥æ‰¾æ¬¡æ•°ï¼š" << averageAttempts << endl << endl;
     }
 
     void rebuild(int newSize) {
