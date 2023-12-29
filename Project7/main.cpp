@@ -12,21 +12,21 @@ int main() {
 
     HashTable hashTable(initialSize);
 
-    // ²åÈë²âÊÔÊı¾İ
+    // æ’å…¥æµ‹è¯•æ•°æ®
     for (const string& name : names) {
         hashTable.insert(name);
     }
 
     int choice;
     while (true) {
-        cout << "ÇëÑ¡Ôñ¹¦ÄÜ£º" << endl;
-        cout << "1. ²éÕÒÊı¾İ\n2. Êä³ö¹şÏ£±í\n3. ÖØ¹¹¹şÏ£±í\n4. ÍË³ö³ÌĞò\n" << endl;
+        cout << "è¯·é€‰æ‹©åŠŸèƒ½ï¼š" << endl;
+        cout << "1. æŸ¥æ‰¾æ•°æ®\n2. è¾“å‡ºå“ˆå¸Œè¡¨\n3. é‡æ„å“ˆå¸Œè¡¨\n4. é€€å‡ºç¨‹åº\n" << endl;
         cin >> choice;
 
         switch (choice) {
         case 1: {
             string name;
-            cout << "ÇëÊäÈëÒª²éÕÒµÄĞÕÃû£º";
+            cout << "è¯·è¾“å…¥è¦æŸ¥æ‰¾çš„å§“åï¼š";
             cin.ignore();
             getline(cin, name);
 
@@ -34,11 +34,11 @@ int main() {
             int index = hashTable.search(name, numAttempts);
 
             if (index != -1) {
-                cout << "ĞÕÃû£º" << name << "£¬ÔÚ¹şÏ£±íÖĞµÄË÷Òı£º" << index << endl;
-                cout << "²éÕÒ´ÎÊı£º" << numAttempts << endl;
+                cout << "å§“åï¼š" << name << "ï¼Œåœ¨å“ˆå¸Œè¡¨ä¸­çš„ç´¢å¼•ï¼š" << index << endl;
+                cout << "æŸ¥æ‰¾æ¬¡æ•°ï¼š" << numAttempts << endl;
             }
             else {
-                cout << "ĞÕÃû£º" << name << " Î´ÕÒµ½" << endl;
+                cout << "å§“åï¼š" << name << " æœªæ‰¾åˆ°" << endl;
             }
 
             break;
@@ -48,17 +48,17 @@ int main() {
             break;
         case 3: {
             int newSize;
-            cout << "ÇëÊäÈëĞÂµÄ¹şÏ£±í´óĞ¡£º";
+            cout << "è¯·è¾“å…¥æ–°çš„å“ˆå¸Œè¡¨å¤§å°ï¼š";
             cin >> newSize;
             hashTable.rebuild(newSize);
-            cout << "¹şÏ£±íÒÑÖØ¹¹" << endl;
+            cout << "å“ˆå¸Œè¡¨å·²é‡æ„" << endl;
             break;
         }
         case 4:
-            cout << "³ÌĞòÍË³ö\n";
+            cout << "ç¨‹åºé€€å‡º\n";
             return 0;
         default:
-            cout << "ÎŞĞ§Ñ¡Ôñ£¬ÇëÖØĞÂÊäÈë\n";
+            cout << "æ— æ•ˆé€‰æ‹©ï¼Œè¯·é‡æ–°è¾“å…¥\n";
         }
     }
 }
