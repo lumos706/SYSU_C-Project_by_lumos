@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-6f7c45d119b861eaacc6.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Calculator",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Calculator::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Calculator-Debug-0d3ac40a473f6df0f5d1.json",
+					"name" : "Calculator",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Calculator_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Calculator_autogen-Debug-4bf0fe737b4c67864a6d.json",
+					"name" : "Calculator_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Calculator_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Calculator_autogen_timestamp_deps-Debug-26401d0158345b96958f.json",
+					"name" : "Calculator_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/10559/Desktop/build-Calculator-Desktop_Qt_6_2_4_MSVC2019_64bit-Debug",
+		"source" : "C:/Users/10559/Desktop/Calculator"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}

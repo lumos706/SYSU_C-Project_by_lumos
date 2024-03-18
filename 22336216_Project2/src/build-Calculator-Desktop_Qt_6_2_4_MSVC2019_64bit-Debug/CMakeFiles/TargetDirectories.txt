@@ -1,0 +1,8 @@
+C:/Users/10559/Desktop/build-Calculator-Desktop_Qt_6_2_4_MSVC2019_64bit-Debug/CMakeFiles/Calculator.dir
+C:/Users/10559/Desktop/build-Calculator-Desktop_Qt_6_2_4_MSVC2019_64bit-Debug/CMakeFiles/edit_cache.dir
+C:/Users/10559/Desktop/build-Calculator-Desktop_Qt_6_2_4_MSVC2019_64bit-Debug/CMakeFiles/rebuild_cache.dir
+C:/Users/10559/Desktop/build-Calculator-Desktop_Qt_6_2_4_MSVC2019_64bit-Debug/CMakeFiles/list_install_components.dir
+C:/Users/10559/Desktop/build-Calculator-Desktop_Qt_6_2_4_MSVC2019_64bit-Debug/CMakeFiles/install.dir
+C:/Users/10559/Desktop/build-Calculator-Desktop_Qt_6_2_4_MSVC2019_64bit-Debug/CMakeFiles/install/local.dir
+C:/Users/10559/Desktop/build-Calculator-Desktop_Qt_6_2_4_MSVC2019_64bit-Debug/CMakeFiles/Calculator_autogen_timestamp_deps.dir
+C:/Users/10559/Desktop/build-Calculator-Desktop_Qt_6_2_4_MSVC2019_64bit-Debug/CMakeFiles/Calculator_autogen.dir

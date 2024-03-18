@@ -1,0 +1,15 @@
+# ninja log v5
+6	65	0	C:/Users/10559/Desktop/build-Calculator-Desktop_Qt_6_2_4_MSVC2019_64bit-Debug/CMakeFiles/cmake.verify_globs	4f7353198b0d2b3e
+3	2831	7183628200890124	Calculator_autogen/timestamp	54aadbe846aa6404
+3	2831	7183628200890124	Calculator_autogen/mocs_compilation.cpp	54aadbe846aa6404
+3	2831	7183628200890124	C:/Users/10559/Desktop/build-Calculator-Desktop_Qt_6_2_4_MSVC2019_64bit-Debug/Calculator_autogen/timestamp	54aadbe846aa6404
+3	2831	7183628200890124	C:/Users/10559/Desktop/build-Calculator-Desktop_Qt_6_2_4_MSVC2019_64bit-Debug/Calculator_autogen/mocs_compilation.cpp	54aadbe846aa6404
+2839	6023	7183628234007246	CMakeFiles/Calculator.dir/Calculator_autogen/mocs_compilation.cpp.obj	b7c667b9fedefc3d
+2832	6210	7183628235884836	CMakeFiles/Calculator.dir/main.cpp.obj	f6b596d72d4d531f
+2846	6601	7183628239787568	CMakeFiles/Calculator.dir/widget.cpp.obj	e6bc222944c82326
+5	37	0	C:/Users/10559/Desktop/build-Calculator-Desktop_Qt_6_2_4_MSVC2019_64bit-Debug/CMakeFiles/cmake.verify_globs	4f7353198b0d2b3e
+29	676	7183628732616331	Calculator.exe	7e72dd3c61fd0117
+4	38	0	C:/Users/10559/Desktop/build-Calculator-Desktop_Qt_6_2_4_MSVC2019_64bit-Debug/CMakeFiles/cmake.verify_globs	4f7353198b0d2b3e
+6	47	0	C:/Users/10559/Desktop/build-Calculator-Desktop_Qt_6_2_4_MSVC2019_64bit-Debug/CMakeFiles/cmake.verify_globs	4f7353198b0d2b3e
+4	44	0	C:/Users/10559/Desktop/build-Calculator-Desktop_Qt_6_2_4_MSVC2019_64bit-Debug/CMakeFiles/cmake.verify_globs	4f7353198b0d2b3e
+5	69	0	C:/Users/10559/Desktop/build-Calculator-Desktop_Qt_6_2_4_MSVC2019_64bit-Debug/CMakeFiles/cmake.verify_globs	4f7353198b0d2b3e

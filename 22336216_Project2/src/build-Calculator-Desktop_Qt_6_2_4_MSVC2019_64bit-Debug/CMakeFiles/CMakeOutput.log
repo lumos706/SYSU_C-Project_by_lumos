@@ -1,0 +1,62 @@
+The system is: Windows - 10.0.22621 - AMD64
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: D:/vs/VC/Tools/MSVC/14.29.30133/bin/HostX64/x64/cl.exe 
+Build flags: -DQT_QML_DEBUG
+Id flags:  
+
+The output was:
+0
+用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.29.30146 版
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+CMakeCXXCompilerId.cpp
+Microsoft (R) Incremental Linker Version 14.29.30146.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/out:CMakeCXXCompilerId.exe 
+CMakeCXXCompilerId.obj 
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.exe"
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.obj"
+
+The CXX compiler identification is MSVC, found in "C:/Users/10559/Desktop/build-Calculator-Desktop_Qt_6_2_4_MSVC2019_64bit-Debug/CMakeFiles/3.24.2/CompilerIdCXX/CMakeCXXCompilerId.exe"
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: C:/Users/10559/Desktop/build-Calculator-Desktop_Qt_6_2_4_MSVC2019_64bit-Debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):D:/vs/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_82e55 && [1/2] Building CXX object CMakeFiles\cmTC_82e55.dir\CMakeCXXCompilerABI.cpp.obj
+[2/2] Linking CXX executable cmTC_82e55.exe
+
+
+
+Performing C++ SOURCE FILE Test HAVE_STDATOMIC succeeded with the following output:
+Change Dir: C:/Users/10559/Desktop/build-Calculator-Desktop_Qt_6_2_4_MSVC2019_64bit-Debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):D:/vs/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_abf38 && [1/2] Building CXX object CMakeFiles\cmTC_abf38.dir\src.cxx.obj
+C:\Users\10559\Desktop\build-Calculator-Desktop_Qt_6_2_4_MSVC2019_64bit-Debug\CMakeFiles\CMakeTmp\src.cxx(17): warning C4312: “类型强制转换”: 从“unsigned int”转换到更大的“void *”
+[2/2] Linking CXX executable cmTC_abf38.exe
+
+
+Source file was:
+#include <atomic>
+#include <cstdint>
+
+void test(volatile std::atomic<std::int64_t> &a)
+{
+    std::int64_t v = a.load(std::memory_order_acquire);
+    while (!a.compare_exchange_strong(v, v + 1,
+                                      std::memory_order_acq_rel,
+                                      std::memory_order_acquire)) {
+        v = a.exchange(v - 1);
+    }
+    a.store(v + 1, std::memory_order_release);
+}
+
+int main(int, char **)
+{
+    void *ptr = (void*)0xffffffc0; // any random pointer
+    test(*reinterpret_cast<std::atomic<std::int64_t> *>(ptr));
+    return 0;
+}
